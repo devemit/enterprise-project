@@ -8,7 +8,7 @@ const Main = () => {
   const [results, setResults] = useState([]);
 
   const fetchJson = () => {
-    fetch('./books/listofbooks.json')
+    fetch('./src/books/listofbooks.json')
       .then((response) => {
         return response.json();
       })
