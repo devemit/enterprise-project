@@ -1,0 +1,134 @@
+.footer {
+  background: var(--whitesmoke);
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 1rem;
+  text-align: left;
+  padding: 3.125rem 3.75rem 2.5rem;
+  overflow: hidden;
+}
+.footer .footer__left {
+  float: left;
+}
+/* The company logo */
+
+.footer h3 {
+  color: var(--black);
+  font: normal 2.25rem cursive;
+  margin: 0 0 0.625rem;
+}
+
+.footer h3 span {
+  color: var(--gold);
+}
+
+/* Footer links */
+
+.footer .footer__company__name {
+  color: var(--grey);
+  font-size: clamp(0.65rem, 2vw, 1rem);
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer social icons */
+.footer .footer__icons {
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+.footer__icons-icon {
+  color: var(--ligthblack);
+}
+
+.footer__icons-icon:hover {
+  color: var(--gold);
+}
+
+/* Footer Right */
+.footer .footer__right {
+  float: right;
+}
+
+.footer .footer__right p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0.9rem 2.625rem 0 0;
+  color: var(--black);
+}
+
+/* The contact form */
+.footer form {
+  display: inline-block;
+}
+.footer form input,
+.footer form textarea {
+  display: block;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  background-color: var(--ligthblack);
+  border: none;
+  resize: none;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: var(--grey);
+  width: 25rem;
+  padding: 1.125rem;
+}
+
+.footer form input {
+  height: 3.5rem;
+  margin-bottom: 1rem;
+}
+.footer form textarea {
+  height: 6.25rem;
+  margin-bottom: 1.25rem;
+}
+.footer form button {
+  border-radius: 0.2rem;
+  background-color: var(--gold);
+  color: var(--white);
+  border: 0;
+  padding: 1rem 3.125rem;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .footer {
+    font: bold 0.9rem;
+  }
+  .footer .footer__company__name {
+    font-size: 0.75rem;
+  }
+  .footer form input,
+  .footer form textarea {
+    width: 15.5rem;
+  }
+  .footer form button {
+    padding: 0.625rem 2.2rem;
+  }
+}
+@media (max-width: 800px) {
+  .footer {
+    padding: 1.85rem;
+  }
+  .footer .footer__left,
+  .footer .footer__right {
+    float: none;
+    max-width: 18.75rem;
+    margin: 0 auto;
+  }
+  .footer .footer__left {
+    margin-bottom: 2.5rem;
+  }
+  .footer form {
+    margin-top: 1.875rem;
+  }
+  .footer form {
+    display: block;
+  }
+  .footer form button {
+    float: none;
+  }
+}

@@ -1,0 +1,78 @@
+.main-section__container {
+  padding: 1rem;
+}
+
+.main-section__content-wrapper {
+  background-color: var(--whitesmoke);
+  height: 100%;
+  width: 100%;
+}
+.main-section__content-wrapper__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  /* i am using CLAMP for font sizes to avoid using extra queries. */
+  font-size: clamp(1.4rem, 2vw, 2.2rem);
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: 800;
+}
+
+/* Form style  */
+.main-section__search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-section__search-input {
+  max-width: 70%;
+  width: 40%;
+  padding: 0.45rem;
+  outline: none;
+  border: none;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+}
+.main-section__search-input__submit-btn {
+  border: none;
+  background: var(--gold);
+  color: var(--white);
+  font-size: clamp(0.85rem, 2vw, 1.1em);
+  padding: 0.37rem;
+  cursor: pointer;
+}
+.main-section__search-input__clear-btn {
+  border: none;
+  color: var(--white);
+  background-color: rgb(165, 24, 24);
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  padding: 0.37rem;
+  cursor: pointer;
+  margin: 0 0.2rem;
+}
+.main-section__grid-container {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+}
+
+@media (min-width: 600px) {
+  .main-section__grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .main-section__grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .main-section__grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1490px) {
+  .main-section__grid-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

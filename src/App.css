@@ -1,0 +1,15 @@
+:root {
+  --white: #ffffff;
+  --whitesmoke: #f5f5f5;
+  --black: #000;
+  --ligthblack: #1f2022;
+  --grey: #8f9296;
+  --gold: #daa520;
+}
+
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
