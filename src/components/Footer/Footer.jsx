@@ -4,7 +4,7 @@ import { AiFillFacebook, AiFillTwitterCircle, AiFillInstagram } from 'react-icon
 
 const Footer = () => {
   return (
-    <footer id='contact' className='footer'>
+    <footer id='footer-scroll' className='footer'>
       <div className='footer__left'>
         <h3>
           Company<span>logo</span>

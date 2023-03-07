@@ -1,6 +1,8 @@
 import React from 'react';
 import './Book.css';
+
 const Book = ({ title, author, genre }) => {
+  // destruct props
   return (
     <div className='book-container'>
       <div className='book-content'>

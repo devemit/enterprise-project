@@ -13,12 +13,14 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  // I dont like this approach but is the only one think which works.
   const closeMobileNav = () => {
     setNav(false);
   };
 
   return (
-    <nav id='nav' className='navbar'>
+    // I am using ID's to scroll to sections
+    <nav id='navbar-scroll' className='navbar'>
       <div className='navbar__logo'>
         <BiBookHeart size={28} className='navbar__book-icon' />
         <span className='navbar__title'>Bright Ideas Bookstore</span>
@@ -30,7 +32,7 @@ const Navbar = () => {
         <li className='navbar__menu-item'>
           <Link
             onClick={closeMobileNav}
-            to='nav'
+            to='navbar-scroll'
             spy={true}
             smooth={true}
             offset={-10}
@@ -42,7 +44,7 @@ const Navbar = () => {
         <li className='navbar__menu-item'>
           <Link
             onClick={closeMobileNav}
-            to='about-us'
+            to='about-us-scroll'
             spy={true}
             smooth={true}
             offset={10}
@@ -54,7 +56,7 @@ const Navbar = () => {
         <li className='navbar__menu-item'>
           <Link
             onClick={closeMobileNav}
-            to='contact'
+            to='footer-scroll'
             spy={true}
             smooth={true}
             offset={50}

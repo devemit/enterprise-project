@@ -55,8 +55,7 @@ const Main = () => {
 
   return (
     <>
-      {/* I am using ID's for to scroll to sections */}
-      <div id='hero_section' className='main-section__container'>
+      <div className='main-section__container'>
         <div className='main-section__content-wrapper'>
           <div className='main-section__content-wrapper__title'>
             Our collection of books
@@ -80,6 +79,7 @@ const Main = () => {
             >
               Search
             </button>
+            {/* Reset filter button was not mentioned in the instructions, it allows you clear the previous searched query and to return all items(books) */}
             <button
               onClick={resetFilters}
               type='reset'
@@ -88,10 +88,10 @@ const Main = () => {
               Clear
             </button>
           </form>
-
           <div className='main-section__grid-container'>
             {results?.map((book) => (
               <div key={book.title}>
+                {/* passing as props */}
                 <Book title={book.title} author={book.author} genre={book.genre} />
               </div>
             ))}

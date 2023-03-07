@@ -3,7 +3,7 @@ import './About.css';
 
 const About = () => {
   return (
-    <div id='about-us' className='about-us__container'>
+    <div id='about-us-scroll' className='about-us__container'>
       <hr />
       <div className='about-us__title'>
         More than <span className='about-us__title__span'>$25 million</span> raised for
