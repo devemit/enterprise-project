@@ -1,19 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
 import { BiBookHeart } from 'react-icons/bi';
-import { useState } from 'react';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
+  // Open/close toggle button
   const handleNav = () => {
     setNav(!nav);
   };
 
-  // I dont like this approach but is the only one think which works.
+  // bad approach
   const closeMobileNav = () => {
     setNav(false);
   };
@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     // I am using ID's to scroll to sections
     <nav id='navbar-scroll' className='navbar'>
-      <div className='navbar__logo'>
+      <div className='navbar__logo-wrapper'>
         <BiBookHeart size={28} className='navbar__book-icon' />
         <span className='navbar__title'>Bright Ideas Bookstore</span>
       </div>

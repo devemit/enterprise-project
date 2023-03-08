@@ -9,7 +9,7 @@
   text-align: center;
   padding: 1rem;
 }
-.about-us__title__span {
+.about-us__title-span {
   font-weight: 800;
   color: var(--gold);
 }
@@ -31,14 +31,14 @@
 .about-us__content__text-one {
   font-size: clamp(0.85rem, 1.5vw, 1.4rem);
 }
-.about-us__content__text-one__span {
+.about-us__content__text-one-bold {
   font-weight: 800;
 }
 .about-us__content__text-two {
   font-size: clamp(0.85rem, 1.5vw, 1.4rem);
   padding-top: 1rem;
 }
-.about-us__content__text-two__span {
+.about-us__content__text-two-bold {
   font-weight: 800;
 }
 .about-us__content__text-three {
@@ -47,7 +47,7 @@
   padding: 1.5rem;
   margin-top: 1rem;
 }
-.about-us__content__text-three__span {
+.about-us__content__text-three-bold {
   font-size: clamp(1rem, 2vw, 3rem);
   font-weight: 800;
 }

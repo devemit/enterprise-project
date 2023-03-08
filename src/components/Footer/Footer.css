@@ -7,24 +7,23 @@
   padding: 3.125rem 3.75rem 2.5rem;
   overflow: hidden;
 }
-.footer .footer__left {
+.footer__left {
   float: left;
 }
-/* The company logo */
 
-.footer h3 {
+.footer__left__title {
   color: var(--black);
   font: normal 2.25rem cursive;
   margin: 0 0 0.625rem;
 }
 
-.footer h3 span {
+.footer__left__title-span {
   color: var(--gold);
 }
 
 /* Footer links */
 
-.footer .footer__company__name {
+.footer__left__company-name {
   color: var(--grey);
   font-size: clamp(0.65rem, 2vw, 1rem);
   font-weight: normal;
@@ -32,24 +31,25 @@
 }
 
 /* Footer social icons */
-.footer .footer__icons {
+.footer__left__icons {
   margin-top: 1.5rem;
   cursor: pointer;
 }
-.footer__icons-icon {
+.footer__left__icons-icon {
   color: var(--ligthblack);
 }
 
-.footer__icons-icon:hover {
+.footer__left__icons-icon:hover {
   color: var(--gold);
 }
 
 /* Footer Right */
-.footer .footer__right {
+
+.footer__right {
   float: right;
 }
 
-.footer .footer__right p {
+.footer__right__text {
   display: inline-block;
   vertical-align: top;
   margin: 0.9rem 2.625rem 0 0;
@@ -57,11 +57,12 @@
 }
 
 /* The contact form */
-.footer form {
+
+.footer__right__form {
   display: inline-block;
 }
-.footer form input,
-.footer form textarea {
+.footer .footer__right__form input,
+.footer .footer__right__form textarea {
   display: block;
   border-radius: 0.2rem;
   box-sizing: border-box;

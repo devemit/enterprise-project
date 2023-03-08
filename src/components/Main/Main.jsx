@@ -57,9 +57,7 @@ const Main = () => {
     <>
       <div className='main-section__container'>
         <div className='main-section__content-wrapper'>
-          <div className='main-section__content-wrapper__title'>
-            Our collection of books
-          </div>
+          <div className='main-section__title'>Our collection of books</div>
 
           <form
             onSubmit={(e) => e.preventDefault()}

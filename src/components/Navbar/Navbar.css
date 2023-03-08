@@ -5,7 +5,7 @@
   height: 90px;
   padding: 1.5rem;
 }
-.navbar__logo {
+.navbar__logo-wrapper {
   z-index: 55;
   display: flex;
   justify-content: center;
@@ -28,13 +28,13 @@
   display: flex;
   gap: 1.8rem;
 }
-.navbar__menu .navbar__menu-item {
+.navbar__menu-item {
   list-style: none;
   font-size: clamp(1rem, 2vw, 1.2rem);
   font-style: italic;
   cursor: pointer;
 }
-.navbar__menu .navbar__menu-item:hover {
+.navbar__menu-item:hover {
   color: var(--gold);
   font-weight: 800;
 }
@@ -62,7 +62,7 @@
   .active {
     left: 0;
   }
-  .navbar__menu .navbar__menu-item {
+  .navbar__menu-item {
     font-size: 1.5rem;
     border-bottom: 2px solid var(--gold);
   }
