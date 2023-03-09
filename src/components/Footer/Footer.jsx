@@ -22,7 +22,7 @@ const Footer = () => {
         <form className='footer__right__form' action='#' method='post'>
           <input type='text' name='email' placeholder='Email' />
           <textarea name='message' placeholder='Message'></textarea>
-          <button>Send</button>
+          <button className='footer__right__submit-btn'>Send</button>
         </form>
       </div>
     </footer>

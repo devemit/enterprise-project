@@ -61,8 +61,8 @@
 .footer__right__form {
   display: inline-block;
 }
-.footer .footer__right__form input,
-.footer .footer__right__form textarea {
+.footer__right__form input,
+.footer__right__form textarea {
   display: block;
   border-radius: 0.2rem;
   box-sizing: border-box;
@@ -73,19 +73,19 @@
   font-size: 0.875rem;
   font-weight: normal;
   color: var(--grey);
-  width: 25rem;
+  width: 18rem;
   padding: 1.125rem;
 }
 
-.footer form input {
+.footer__right__form input {
   height: 3.5rem;
   margin-bottom: 1rem;
 }
-.footer form textarea {
+.footer__right__form textarea {
   height: 6.25rem;
   margin-bottom: 1.25rem;
 }
-.footer form button {
+.footer__right__submit-btn {
   border-radius: 0.2rem;
   background-color: var(--gold);
   color: var(--white);
@@ -99,37 +99,35 @@
   .footer {
     font: bold 0.9rem;
   }
-  .footer .footer__company__name {
-    font-size: 0.75rem;
-  }
-  .footer form input,
-  .footer form textarea {
+
+  .footer__right__form input,
+  .footer__right__form textarea {
     width: 15.5rem;
   }
-  .footer form button {
+  .footer__right__submit-btn {
     padding: 0.625rem 2.2rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 765px) {
   .footer {
     padding: 1.85rem;
   }
-  .footer .footer__left,
-  .footer .footer__right {
+  .footer__left,
+  .footer__right {
     float: none;
     max-width: 18.75rem;
     margin: 0 auto;
   }
-  .footer .footer__left {
+  .footer__left {
     margin-bottom: 2.5rem;
   }
-  .footer form {
+  .footer__right__form {
     margin-top: 1.875rem;
   }
-  .footer form {
+  .footer__right__form {
     display: block;
   }
-  .footer form button {
+  .footer__right__submit-btn {
     float: none;
   }
 }
